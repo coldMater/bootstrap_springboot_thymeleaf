@@ -11,4 +11,9 @@ public class SampleController {
 
         return "hello";
     }
+
+    @GetMapping("/grid")
+    public String grid() {
+        return "grid";
+    }
 }
