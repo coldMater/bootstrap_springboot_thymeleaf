@@ -6,9 +6,23 @@
     <!--    화면 액정 해상도에 관계 없이 브라우저에서 보여질 적당한 사이즈로 조절이 된다.-->
     <!--    모든 html5 기반 웹앱에서는 이를 기본적으로 추가하고 있어야 한다.-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <title>기본 예제 Bootstrap 4</title>
 </head>
 <body>
-    <h1 th:text="${'hi!'}">H1 문자열입니다.</h1>
+    <!--  컨테이너라는 클래스는 하나의 큰 단위의 영역을 의미한다. 웹페이지의 각 영역을 구분한다.  -->
+    <div class="container">
+        <h1>Bootstrap 4 기본 예제</h1>
+        <p>container</p>
+    </div>
+    <!--컨테이너 fluid 는 화면의 좌측 여백이 고정되어있다. 반면 그냥 컨테이너는 여백이 화면의 크기에 따라 자동으로 조절된다.-->
+    <!--일반 메뉴를 활용할 때에는 fluid를 활용하고, 일반 본문은 그냥 container를 사용하는 경우가 많다.-->
+    <div class="container-fluid">
+        <h1>Bootstrap 4 기본 예제</h1>
+        <p>container</p>
+    </div>
 </body>
 </html>
