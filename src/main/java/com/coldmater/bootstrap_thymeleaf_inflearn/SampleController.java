@@ -31,4 +31,9 @@ public class SampleController {
     public String color() {
         return "color";
     }
+
+    @GetMapping("/table")
+    public String table() {
+        return "table";
+    }
 }
