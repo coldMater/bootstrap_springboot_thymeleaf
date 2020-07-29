@@ -32,6 +32,11 @@ public class SampleController {
         return "color";
     }
 
+    @GetMapping("/table-responsive")
+    public String tableResponsive() {
+        return "table-responsive";
+    }
+
     @GetMapping("/table")
     public String table() {
         return "table";
