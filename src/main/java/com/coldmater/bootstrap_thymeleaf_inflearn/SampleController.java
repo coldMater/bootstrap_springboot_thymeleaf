@@ -41,4 +41,9 @@ public class SampleController {
     public String table() {
         return "table";
     }
+
+    @GetMapping("/image")
+    public String image() {
+        return "image";
+    }
 }
