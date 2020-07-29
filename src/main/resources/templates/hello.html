@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <!--    뷰포트의 가로길이를 디바이스의 가로길이로 맞추고, 초기 스케일을 1로 설정하는 meta설정 -->
+    <!--    화면 액정 해상도에 관계 없이 브라우저에서 보여질 적당한 사이즈로 조절이 된다.-->
+    <!--    모든 html5 기반 웹앱에서는 이를 기본적으로 추가하고 있어야 한다.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>기본 예제 Bootstrap 4</title>
 </head>
 <body>
-Hello! World! 한글 테스트!
-
+    <h1 th:text="${'hi!'}">H1 문자열입니다.</h1>
 </body>
 </html>
