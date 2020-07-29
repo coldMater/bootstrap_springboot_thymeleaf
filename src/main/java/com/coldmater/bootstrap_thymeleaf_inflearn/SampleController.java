@@ -26,4 +26,9 @@ public class SampleController {
     public String typoCss() {
         return "typo-css";
     }
+
+    @GetMapping("/color")
+    public String color() {
+        return "color";
+    }
 }
