@@ -16,4 +16,9 @@ public class SampleController {
     public String grid() {
         return "grid";
     }
+
+    @GetMapping("/typography")
+    public String typography() {
+        return "typography";
+    }
 }

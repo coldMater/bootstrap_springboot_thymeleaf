@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <title>typography</title>
+</head>
+<body>
+<div class="container">
+    <!-- bootstrap 에 의해 heading 문자열의 크기가 이미 정해져있음 -->
+    <h1>40px</h1>
+    <h2>32px</h2>
+    <h3>28px</h3>
+    <h4>24px</h4>
+    <h5>20px</h5>
+    <h6>16px</h6>
+
+    <hr>
+
+    <!-- display 클래스 -->
+    <!-- display 클래스는 자체적으로 정의된 크기로 텍스트의 크기를 결정한다. -->
+    <!-- display는 h 태그 뿐만 아니라 문자열을 표현할 수 있는 모든 태그에 적용된다. -->
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 1</h1>
+    <h1 class="display-3">Display 1</h1>
+    <h1 class="display-4">Display 1</h1>
+
+    <div class="display-1">Display 1</div>
+    <div class="display-2">Display 1</div>
+    <div class="display-3">Display 1</div>
+    <div class="display-4">Display 1</div>
+
+    <!-- 문자열 관련 태그 - html 관련 태그 -->
+    <!-- 이 태그들에 대해 부트스트랩의 기본 스타일이 적용되어있다. -->
+    <p>General test after <small>small text</small> and Keep Going</p>
+    <h1>General test after <small>small text</small> and Keep Going</h1>
+    <p>Emphasize <mark>this</mark> tag</p>
+    <blockquote class="blockquote">
+        <p> 인용구, 어떤 사람의 말이나 명언을 인용함 </p>
+        <footer class="blockquote-footer">coldmater</footer>
+    </blockquote>
+    <p>Web Document is made of <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+
+    <dl>
+        <dt>중국요리</dt>
+            <dd>- 짜장면</dd>
+            <dd>- 짜장면</dd>
+        <dt>한식요리</dt>
+            <dd>- 비빔밥</dd>
+            <dd>- 김치찌개</dd>
+    </dl>
+
+    <p>
+        HTML 코드 : <code>span</code>, <code>section</code>, <code>div</code>
+        태그는 문서의 영역을 나타냅니다.
+    </p>
+
+    <!-- 와 키보드도 있었네-->
+    <p>
+        <kbd>ctrl</kbd> + <kbd>c</kbd>
+    </p>
+
+    <pre>
+줄바꿈이 가능하도록
+그대로 표현하는 태그
+그래서
+줄바꿈이 적용됨
+        탭도 그대로 적용되어있음
+    </pre>
+
+
+</div>
+</body>
+</html>
