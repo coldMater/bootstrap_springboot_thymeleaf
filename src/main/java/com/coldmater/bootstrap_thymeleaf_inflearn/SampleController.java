@@ -99,4 +99,9 @@ public class SampleController {
         return "form";
     }
 
+    @GetMapping("/input")
+    public String input() {
+        return "input";
+    }
+
 }
