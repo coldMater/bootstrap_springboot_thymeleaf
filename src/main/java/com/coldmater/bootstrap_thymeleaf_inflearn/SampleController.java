@@ -88,4 +88,10 @@ public class SampleController {
         return "listgroup";
     }
 
+
+    @GetMapping("/card")
+    public String card() {
+        return "card";
+    }
+
 }
