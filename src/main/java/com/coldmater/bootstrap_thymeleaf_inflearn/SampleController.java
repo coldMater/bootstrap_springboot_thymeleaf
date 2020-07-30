@@ -46,4 +46,9 @@ public class SampleController {
     public String image() {
         return "image";
     }
+
+    @GetMapping("/jumbotron")
+    public String jumbotron() {
+        return "jumbotron";
+    }
 }
