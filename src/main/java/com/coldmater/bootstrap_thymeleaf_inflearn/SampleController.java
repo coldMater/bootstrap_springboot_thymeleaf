@@ -56,4 +56,9 @@ public class SampleController {
     public String alert() {
         return "alert";
     }
+
+    @GetMapping("/button")
+    public String button() {
+        return "button";
+    }
 }
