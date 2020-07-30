@@ -83,4 +83,9 @@ public class SampleController {
         return "breadcrumb";
     }
 
+    @GetMapping("/listgroup")
+    public String listgroup() {
+        return "listgroup";
+    }
+
 }

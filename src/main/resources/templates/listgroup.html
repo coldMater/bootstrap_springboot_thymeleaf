@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item">1 - a</li>
+        <li class="list-group-item active">2 - b</li>
+        <li class="list-group-item">3 - c</li>
+    </ul>
+
+    <hr>
+
+    <!--  list-group-item-action 클래스가 주어지면, 클릭 모션이 생긴다. -->
+    <!--  div와 a태그로도 리스트 그룹을 만들 수 있다.  -->
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">항목 1</a>
+        <a href="#" class="list-group-item list-group-item-action">항목 1</a>
+        <a href="#" class="list-group-item list-group-item-action disabled">항목 1</a>
+    </div>
+
+    <hr>
+
+    <!--  경계선 없는 list 그룹을 만든다.  -->
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">1 - a</li>
+        <li class="list-group-item active">2 - b</li>
+        <li class="list-group-item">3 - c</li>
+    </ul>
+
+    <hr>
+
+    <!--  리스트의 각 아이템에는 색상을 줄 수 있다.  -->
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success list-group-item-action">1 - a</li>
+        <li class="list-group-item list-group-item-warning list-group-item-action">2 - b</li>
+        <li class="list-group-item list-group-item-danger list-group-item-action">3 - c</li>
+    </ul>
+
+</div>
+</body>
+</html>
