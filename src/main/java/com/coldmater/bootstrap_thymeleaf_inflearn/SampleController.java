@@ -77,4 +77,10 @@ public class SampleController {
     public String pagination() {
         return "pagination";
     }
+
+    @GetMapping("/breadcrumb")
+    public String breadcrumb() {
+        return "breadcrumb";
+    }
+
 }
