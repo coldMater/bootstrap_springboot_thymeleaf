@@ -51,4 +51,9 @@ public class SampleController {
     public String jumbotron() {
         return "jumbotron";
     }
+
+    @GetMapping("/alert")
+    public String alert() {
+        return "alert";
+    }
 }

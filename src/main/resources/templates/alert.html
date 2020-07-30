@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>alert</title>
+</head>
+<body>
+<!-- 경고창을 띄우는 용도로 사용된다. -->
+<!-- javascript로 alert 창이 뜨고 꺼지는 기능을 제어할 수 있다.-->
+    <div class="container">
+        <div class="alert alert-success">
+            <strong>Success</strong> Success Alert입니다.
+        </div>
+        <div class="alert alert-info">
+            <strong>Info</strong> Info Alert 입니다.
+        </div>
+        <div class="alert alert-warning">
+            <strong>Warning</strong> Warning Alert 입니다.
+        </div>
+        <div class="alert alert-danger">
+            <strong>Danger</strong> Danger Alert 입니다.
+        </div>
+        <!-- alert 내부에 링크를 alert-link 속성을 사용하여, 스타일의 이질감이 없도록 할 수 있다. -->
+        <div class="alert alert-primary">
+            <strong>Primary</strong> Primary Alert 입니다.
+            <a href="http://google.com" class="alert-link">Google</a>
+        </div>
+        <!-- alert창에 닫기 버튼을 추가할 수 있다. fade show 속성으로 부드럽게 사라지게 할 수 있다.-->
+        <div class="alert alert-warning alert-dismissible fade show">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <!-- jquery 를 활용하여 alert을 사라지게 할 수 있다.-->
+        <div id="test_alert" class="alert alert-warning alert-dismissible fade show">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <button type="button" onclick="closeAlert()">Alert 닫기</button>
+    </div>
+
+    <!--  alert이 닫히기 전과 후의 이벤트  -->
+
+<script>
+    function closeAlert() {
+        $("#test_alert").alert("close");
+    }
+
+    $(function(){ //잘은 모르지만 이 부분을 레디함수라고 하는 것 같다. 로딩과 함께 실행되는 것 같다.
+        $("#test_alert").on("close.bs.alert", function(){
+            alert("Alert 창이 닫히기 직전");
+        });
+        $("#test_alert").on("closed.bs.alert", function() {
+            alert("Alert 창이 닫힌 뒤");
+        });
+    })
+</script>
+</body>
+</html>
