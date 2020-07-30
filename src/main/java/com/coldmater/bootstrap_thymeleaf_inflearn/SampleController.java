@@ -99,6 +99,11 @@ public class SampleController {
         return "form";
     }
 
+    @GetMapping("/input-group")
+    public String inputGroup() {
+        return "input-group";
+    }
+
     @GetMapping("/input")
     public String input() {
         return "input";
