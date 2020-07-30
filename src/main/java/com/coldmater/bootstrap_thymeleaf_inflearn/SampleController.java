@@ -61,4 +61,9 @@ public class SampleController {
     public String button() {
         return "button";
     }
+
+    @GetMapping("/badge")
+    public String badge() {
+        return "badge";
+    }
 }
