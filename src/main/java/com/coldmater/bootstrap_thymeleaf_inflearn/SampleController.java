@@ -71,4 +71,10 @@ public class SampleController {
     public String progress() {
         return "progress";
     }
+
+
+    @GetMapping("/pagination")
+    public String pagination() {
+        return "pagination";
+    }
 }
