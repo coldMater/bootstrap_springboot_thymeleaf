@@ -66,4 +66,9 @@ public class SampleController {
     public String badge() {
         return "badge";
     }
+
+    @GetMapping("/progress")
+    public String progress() {
+        return "progress";
+    }
 }
