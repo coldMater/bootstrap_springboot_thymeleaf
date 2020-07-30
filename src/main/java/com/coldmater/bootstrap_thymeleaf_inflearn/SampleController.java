@@ -94,4 +94,9 @@ public class SampleController {
         return "card";
     }
 
+    @GetMapping("/form")
+    public String form() {
+        return "form";
+    }
+
 }
