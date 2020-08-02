@@ -109,4 +109,9 @@ public class SampleController {
         return "input";
     }
 
+    @GetMapping("/dropdown")
+    public String dropdown() {
+        return "dropdown";
+    }
+
 }

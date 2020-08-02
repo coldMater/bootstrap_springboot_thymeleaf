@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <title>dropdown</title>
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                기본 드랍다운
+            </button>
+                <div class="dropdown-menu">
+                    <div class="dropdown-header">메뉴 헤더 1</div>
+                    <a href="#" class="dropdown-item">메뉴 1</a>
+                    <a href="#" class="dropdown-item active">메뉴 2</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">메뉴 헤더 2</div>
+                <a href="#" class="dropdown-item">메뉴 3</a>
+            </div>
+        </div>
+        <hr>
+        <div class="dropright">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                기본 드랍다운
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">메뉴 헤더 1</div>
+                <a href="#" class="dropdown-item">메뉴 1</a>
+                <a href="#" class="dropdown-item active">메뉴 2</a>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-header">메뉴 헤더 2</div>
+                <a href="#" class="dropdown-item">메뉴 3</a>
+            </div>
+        </div>
+        <hr>
+        <div class="justify-content-end d-flex">
+            <div class="dropleft justify-content-end">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    기본 드랍다운
+                </button>
+                <div class="dropdown-menu">
+                    <div class="dropdown-header">메뉴 헤더 1</div>
+                    <a href="#" class="dropdown-item">메뉴 1</a>
+                    <a href="#" class="dropdown-item active">메뉴 2</a>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-header">메뉴 헤더 2</div>
+                    <a href="#" class="dropdown-item">메뉴 3</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="dropup">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                기본 드랍다운
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">메뉴 헤더 1</div>
+                <a href="#" class="dropdown-item">메뉴 1</a>
+                <a href="#" class="dropdown-item active">메뉴 2</a>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-header">메뉴 헤더 2</div>
+                <a href="#" class="dropdown-item">메뉴 3</a>
+            </div>
+        </div>
+        <hr>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle btn-block" data-toggle="dropdown">
+                드랍다운 위치를 오른쪽으로
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header">메뉴 헤더 1</div>
+                <a href="#" class="dropdown-item">메뉴 1</a>
+                <a href="#" class="dropdown-item active">메뉴 2</a>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-header">메뉴 헤더 2</div>
+                <a href="#" class="dropdown-item">메뉴 3</a>
+            </div>
+        </div>
+        <hr>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle btn-block" data-toggle="dropdown">
+                드랍다운 위치를 왼쪽으로
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">메뉴 헤더 1</div>
+                <a href="#" class="dropdown-item">메뉴 1</a>
+                <a href="#" class="dropdown-item active">메뉴 2</a>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-header">메뉴 헤더 2</div>
+                <a href="#" class="dropdown-item">메뉴 3</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
