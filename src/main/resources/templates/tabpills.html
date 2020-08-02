@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <title>tabpills</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <!--탭 버튼-->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#tab1" class="nav-link" data-toggle="tab">tab1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab2" class="nav-link active" data-toggle="tab">tab2</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab3" class="nav-link" data-toggle="tab">tab3</a>
+            </li>
+        </ul>
+        <!--본문 부분-->
+        <!--fade 효과는 처음에는 보이지 않는다. 따라서 show 라는 속성을 추가해준다.-->
+        <div class="tab-content">
+            <div class="tab-pane container fade " id="tab1">
+                <h1>Tab 1</h1>
+                <p>이 부분은 Tab 1의 내용 부분입니다.</p>
+            </div>
+            <div class="tab-pane container fade show active" id="tab2">
+                <h1>Tab 2</h1>
+                <p>이 부분은 Tab 2의 내용 부분입니다.</p>
+            </div>
+            <div class="tab-pane container fade" id="tab3">
+                <h1>Tab 3</h1>
+                <p>이 부분은 Tab3의 내용 부분입니다.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <!--필 버튼-->
+        <!--탭 버튼과 거의 동일하다.-->
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#tab11" class="nav-link" data-toggle="pill">pill</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab12" class="nav-link active" data-toggle="pill">tab2</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tab13" class="nav-link" data-toggle="pill">tab3</a>
+            </li>
+        </ul>
+        <!--본문 부분-->
+        <div class="tab-content">
+            <div class="tab-pane container fade " id="tab11">
+                <h1>Pill 1</h1>
+                <p>이 부분은 Tab 1의 내용 부분입니다.</p>
+            </div>
+            <div class="tab-pane container fade show active" id="tab12">
+                <h1>Pill 2</h1>
+                <p>이 부분은 Tab 2의 내용 부분입니다.</p>
+            </div>
+            <div class="tab-pane container fade" id="tab13">
+                <h1>Pill 3</h1>
+                <p>이 부분은 Tab3의 내용 부분입니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

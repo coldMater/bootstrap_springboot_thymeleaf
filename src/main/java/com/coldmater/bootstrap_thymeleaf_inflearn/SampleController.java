@@ -114,4 +114,9 @@ public class SampleController {
         return "dropdown";
     }
 
+    @GetMapping("/tabpills")
+    public String tablpills() {
+        return "tabpills";
+    }
+
 }
