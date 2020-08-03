@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <title>popOver</title>
+    <script>
+        $(function(){
+            $("#a1, #a2, #a3, #a4, #a5, #a6, #a7").popover()
+        })
+        function showAll() {
+            $("#a1, #a2, #a3, #a4, #a5, #a6, #a7").popover("show")
+        }
+        function hideAll() {
+            $("#a1, #a2, #a3, #a4, #a5, #a6, #a7").popover("hide")
+        }
+        function showToggle() {
+            $("#a1, #a2, #a3, #a4, #a5, #a6, #a7").popover("toggle")
+        }
+    </script>
+</head>
+<body>
+<div class="container mt-5">
+    <a href="#" data-toggle="popover" title="Popover Title" data-content="Popover title" id="a1">
+        Popover Basic Description
+    </a>
+    <hr>
+    <div class="text-center">
+        <!-- top, bottom, left, right 가 가능하다.-->
+        <a href="#" data-toggle="popover" title="Popover top" data-content="Popover top" data-placement="top" id="a2">
+            PopOver Top
+        </a>
+    </div>
+
+    <hr>
+    <a href="#" title="Dismissible Popover" data-content="외부를 클릭하면 사라지는 popOver" data-toggle="popover" id="a6" data-trigger="focus">
+        Dismissible popover
+    </a>
+
+    <hr>
+    <a href="#" title="Hover Popover" data-content="마우스 hover popover" data-toggle="popover" id="a7" data-trigger="hover">
+        마우스 Hover
+    </a>
+
+    <hr>
+    <!--스크립트로 popover 제어하기-->
+    <button type="button" class="btn btn-primary" onclick="showAll()">모두 보기</button>
+    <button type="button" class="btn btn-primary" onclick="hideAll()">모두 숨기기</button>
+    <button type="button" class="btn btn-primary" onclick="showToggle()">반전 시키기</button>
+
+</div>
+</body>
+</html>

@@ -136,4 +136,7 @@ public class SampleController {
 
     @GetMapping("/tooltip")
     public String tooltip() { return "tooltip";}
+
+    @GetMapping("/popover")
+    public String popOver() { return "popover";}
 }
