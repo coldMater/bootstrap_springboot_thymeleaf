@@ -133,4 +133,7 @@ public class SampleController {
     public String modal() {
         return "modal";
     }
+
+    @GetMapping("/tooltip")
+    public String tooltip() { return "tooltip";}
 }
