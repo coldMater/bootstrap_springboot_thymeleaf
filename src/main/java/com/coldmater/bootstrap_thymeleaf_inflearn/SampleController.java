@@ -128,4 +128,9 @@ public class SampleController {
     public String carousel() {
         return "carousel";
     }
+
+    @GetMapping("/modal")
+    public String modal() {
+        return "modal";
+    }
 }
