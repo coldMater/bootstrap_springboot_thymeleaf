@@ -124,4 +124,8 @@ public class SampleController {
         return "navBar";
     }
 
+    @GetMapping("/carousel")
+    public String carousel() {
+        return "carousel";
+    }
 }
