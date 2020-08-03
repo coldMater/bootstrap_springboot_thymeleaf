@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <title>Title</title>
+</head>
+<body>
+<!--navBar는 content class div 가 필요하지 않다.-->
+<!--navbar-dark 의 의미는 현재 navbar가 bg-dark 로써 어두운 상태이므로, 밝은 UI 를 넣으라는 의미가 된다.-->
+<!--navbar-light 는 그 반대의 의미다. -->
+<!--navbar-expand-#, 사이즈에 따라 navBar 버튼을 나타나거나 사라지게 할 수 있다.-->
+<!--navbar-toggler 속성들을 활용하여 사이즈 이하에서 navbar가 특정 버튼을 클릭했을 때 나타나게 할 수 있다.-->
+<!--navbar fixed-top 과 fixed-bottom 두 가지로 지정할 수 있다. sticky-top 도 있다.-->
+<!--navbar fixed-top 을 지정하면, 상단이 잘리기 때문에 적절한 여백을 주면 좋다.-->
+<!--navbar dropdown  -->
+<nav>
+    <div class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+        <!--로고-->
+        <a href="" class="navbar-brand">Logo</a>
+        <!--버튼-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu">
+            <span class="navbar-toggler-icon"></span> <!--햄버거 버튼 아이콘을 생성한다.-->
+        </button>
+        <!--메뉴-->
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">메뉴1</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">메뉴2</a>
+                        <a href="#" class="dropdown-item">메뉴2-1</a>
+                        <a href="#" class="dropdown-item">메뉴2-2</a>
+                        <a href="#" class="dropdown-item">메뉴2-3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">메뉴3</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">우측 메뉴1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">우측 메뉴2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">우측 메뉴3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container" style="margin-top: 100px;">
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+    <p>본문 부분입니다.</p>
+</div>
+</body>
+</html>

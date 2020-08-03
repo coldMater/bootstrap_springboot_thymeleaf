@@ -119,4 +119,9 @@ public class SampleController {
         return "tabpills";
     }
 
+    @GetMapping("/navbar")
+    public String navBar() {
+        return "navBar";
+    }
+
 }
