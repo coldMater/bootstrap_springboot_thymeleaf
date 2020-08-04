@@ -28,6 +28,16 @@
             height: 100px;
             margin-bottom: 5px;
         }
+
+        .box3 {
+            height: 30px;
+            margin-bottom: 5px;
+        }
+
+        .box4 {
+            width: 30px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +98,102 @@
         <div class="box2 bg-warning float-none-right"></div>
     </div>
 
+    <hr>
+
+    <!-- div 는 가로 길이를 지정해주지 않은 경우 자신을 감싸고 있는 부모의 width 의 영향을 받는다. -->
+    <div class="bg-secondary" style="height: 215px; padding: 5px">
+        <div class="box3 bg-warning"></div>
+        <div class="box3 bg-warning w-25"></div>
+        <div class="box3 bg-warning w-50"></div>
+        <div class="box3 bg-warning w-75"></div>
+        <div class="box3 bg-warning w-100"></div>
+        <div class="box3 bg-warning mw-100" style="width: 2000px"></div> <!--최대 가로 길이를 최대 길이로 제한하여 넘는 것을 방지한다.-->
+    </div>
+
+    <hr>
+
+    <div class="bg-secondary" style="height: 215px; padding: 5px">
+        <div class="box4 bg-warning" style="height: 100%"></div>
+        <div class="box4 bg-warning h-25"></div>
+        <div class="box4 bg-warning h-50"></div>
+        <div class="box4 bg-warning h-75"></div>
+        <div class="box4 bg-warning h-100"></div>
+        <div class="box4 bg-warning mh-100" style="height:2000px"></div> <!--최대 높이를 100으로 제한한다.-->
+    </div>
+
+    <hr>
+
+    <!--em 단위는 해당 영역에 설정된 글자 크기이 비례한다. 1em 이 100% 를 의미한다고 보면 된다. -->
+    <!--size: 0,1,2,3,4,5: 각각 0em, .25em, .5em, 1em, 1.5em, 3em-->
+    <!--예를들어 2는 50%를 의미한다.(0.5em 이기 때문) -->
+
+    <div class="box border border-danger">
+        <div class="bg-warning w-100 h-100"></div>
+    </div>
+    <div class="box border border-danger p-3">
+        <div class="bg-warning w-100 h-100"></div>
+    </div>
+    <div class="box border border-danger pt-1 pr-2 pb-3 pl-4">
+        <div class="bg-warning w-100 h-100"></div>
+    </div>
+    <div class="box border border-danger px-2">
+        <div class="bg-warning w-100 h-100"></div>
+    </div>
+    <div class="box border border-danger py-2">
+            <div class="bg-warning w-100 h-100"></div>
+    </div>
+
+    <hr>
+    <div class="box bg-warning"></div>
+    <div class="box bg-warning m-3"></div>
+    <div class="box bg-warning"></div>
+
+    <hr>
+    <div class="box bg-warning"></div>
+    <div class="box bg-warning mt-1 mr-2 mb-3 ml-4"></div>
+    <div class="box bg-warning"></div>
+
+    <hr>
+    <div class="box bg-warning"></div>
+    <div class="box bg-warning mx-2"></div>
+    <div class="box bg-warning"></div>
+
+    <hr>
+    <div class="box bg-warning"></div>
+    <div class="box bg-warning my-2"></div>
+    <div class="box bg-warning"></div>
+
+    <hr>
+    <!--auto 는 여백을 자동으로 준다.-->
+    <!--inline-block 으로 설정되어있는 경우, auto 는 반응하지 않음에 유의한다. -->
+    <div class="box2 bg-warning mx-auto"></div>
+
+    <div class="box bg-warning"></div>
+    <div class="box bg-warning shadow-none"></div>
+    <div class="box bg-warning shadow-sm"></div>
+    <div class="box bg-warning shadow"></div>
+    <div class="box bg-warning shadow-lg"></div>
+
+    <hr>
+
+    <div class="box bg-warning visible"></div>
+    <div class="box bg-warning invisible"></div>
+
+    <hr>
+    <!--block 요소 만들기-->
+    <!--block 요소란 자신의 영역을 잡고 다음 태그를 아래로 내려주는 요소를 말한다.-->
+    <!--div, h1~h6 태근느 block 요소이다. -->
+    <!--d-block 은 span 과 같은 block 요소가 아닌 태그들을 block 요소로 만들어준다.-->
+
+    <hr>
+
+    <span class="bg-info d-block">aaa</span>
+    <span class="bg-info d-sm-block">aaa</span>
+    <span class="bg-info d-md-block">aaa</span>
+    <span class="bg-info d-lg-block">aaa</span>
+    <span class="bg-info d-xl-block">aaa</span>
+
+    <hr>
 </div>
 </body>
 </html>
