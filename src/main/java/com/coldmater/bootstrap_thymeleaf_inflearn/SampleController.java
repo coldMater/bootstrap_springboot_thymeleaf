@@ -93,5 +93,8 @@ public class SampleController {
     public String utilityClass() { return "utility-class";}
 
     @GetMapping("/responsive-web")
-    public String reponsiveWeb() { return "responsive-web";}
+    public String responsiveWeb() { return "responsive-web";}
+
+    @GetMapping("/flex")
+    public String flex() { return "flex";}
 }
