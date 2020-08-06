@@ -91,4 +91,7 @@ public class SampleController {
 
     @GetMapping("/utility-class")
     public String utilityClass() { return "utility-class";}
+
+    @GetMapping("/responsive-web")
+    public String reponsiveWeb() { return "responsive-web";}
 }
